@@ -41,8 +41,7 @@ class ContactBaseFormSet(BaseFormSet):
 
 ContactFormSet = formset_factory(TestForm, formset=ContactBaseFormSet,
                                  extra=2,
-                                 max_num=4,
-                                 validate_max=True)
+                                 max_num=4)
 
 
 class FilesForm(forms.Form):

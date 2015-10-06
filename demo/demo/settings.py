@@ -118,6 +118,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'bootstrap3',
     'demo',
+    'main',
 )
 
 # A sample logging configuration. The only tangible logging
