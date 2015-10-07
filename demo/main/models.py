@@ -7,7 +7,11 @@ class Proveedor(models.Model):
 	telefono=models.CharField(max_length=200, null=True, blank= True)
 	direccion= models.CharField(max_length=200, null=True, blank= True)
 	mail=models.CharField(max_length=50,null=True, blank= True)
-
+class Cliente(models.Model):
+    codigo = models.CharField('Código',max_length=32, unique=True)
+    nombre = models.CharField(max_length=64)
+    telefono = models.CharField('Teléfono',max_length=100)
+    direccion = models.CharField('Dirección',max_length=100)
 class Producto(models.Model):
     codigo = models.CharField('Código',max_length=32, unique=True)
     nombre = models.CharField(max_length=64)
